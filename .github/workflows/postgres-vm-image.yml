@@ -1301,6 +1301,7 @@ jobs:
           # UPDATE asserts its affected row count to catch a silent no-op.
           cat > "${migration_file}" << 'MIGRATION_HEADER'
           # frozen_string_literal: true
+          # generated-by: update-postgres-images
 
           Sequel.migration do
           MIGRATION_HEADER
